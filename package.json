@@ -44,6 +44,7 @@
 		"production": "run-p production:**",
 		"prod": "npm run production",
 		"zip": "node node_scripts/zip.js kominki",
-		"bundle": "run-s production zip"
+		"bundle": "run-s production zip",
+		"server": "browser-sync start --proxy \"dev_kominki.test\" --files \"theme\" --no-notify --no-inject-changes"
 	}
 }

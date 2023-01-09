@@ -3,6 +3,41 @@ const colors = require( 'tailwindcss/colors' );
 module.exports = {
 	theme: {
 		extend: {
+			screens: {
+				xs: "400px",
+				sm: "640px",
+				md: "768px",
+				lg: "1024px",
+				xl: "1280px",
+				"2xl": "1580px",
+				"3xl": "2000px",
+			},
+			fontSize: {
+				sx: ["10px", "14px"],
+				xs: ["12px", "18px"],
+				sm: ["14px", "20px"],
+				base: ["15px", "24px"],
+				lg: ["16px", "28px"],
+				xl: ["18px", "28px"],
+				"2xl": ["22px", "32px"],
+				"3xl": ["28px", "36px"],
+				"4xl": ["34px", "40px"],
+				"5xl": ["42px", "1"],
+				"6xl": ["56px", "1"],
+				"7xl": ["68px", "1"],
+				"8xl": ["88px", "1"],
+				"9xl": ["128px", "1"],
+			},
+			fontFamily: {
+				sans: ["Montserrat", "sans-serif"],
+				serif: ["serif"],
+			},
+			fontWeight: {
+				normal: 400,
+				semibold: 600,
+				bold: 700,
+				"extra-bold": 800,
+			},
 			typography: ( theme ) => ( {
 				/**
 				 * Tailwind Typography’s default styles are opinionated, and
